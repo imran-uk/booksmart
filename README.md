@@ -3,6 +3,8 @@ booksmart
 
 Personal learning project using .NET Core MVC Web app to manage Books and Authors
 
+![2019-08-09 16_03_47-Index - booksmart](https://user-images.githubusercontent.com/542530/62788775-88506200-babf-11e9-87a4-4483538c1526.png)
+
 Repo:
 https://github.com/imran-uk/booksmart
 
