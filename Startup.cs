@@ -34,7 +34,10 @@ namespace booksmart
             });
 
             services.AddDbContext<BookSmartBookContext>(
-                options => options.UseMySQL(Configuration.GetConnectionString("BookContext")));
+                options => options.UseMySQL(
+                    Configuration.GetConnectionString("BookContext")
+                )
+            );
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
