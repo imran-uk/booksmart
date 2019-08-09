@@ -139,8 +139,8 @@ https://localhost:5001/Book
 
 * wire-up Authors to Books
 
-- a book can have 1 or more Authors
-- an Author can be author of 0 or more Books
+a book can have 1 or more Authors
+an Author can be author of 0 or more Books
 
 
 * how to use MySQL client from GitBash and with history and autocomplete of table names
