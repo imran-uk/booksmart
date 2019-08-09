@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using booksmart.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace booksmart
 {
@@ -31,6 +33,8 @@ namespace booksmart
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddDbContext<BookSmartBookContext>(
+                options => options.UseMySQL(Configuration.GetConnectionString("BookContext")));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
